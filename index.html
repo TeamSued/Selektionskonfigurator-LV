@@ -56,6 +56,8 @@
 
       background-color: darkred;
 
+     color: white; 
+
       padding: 20px;
 
       font-weight: bold;
@@ -135,7 +137,8 @@
     <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMzNyZzaWc9bWFjMjYyMzUzN0QxRkFFQjc2MTVBRDAzOUIzMzIyRUFDQTkzQjM4x">bAV Bestand</option>
 
   </select>
-
+ 
+ <div id="erklaerungstext" style="margin-top: 10px; font-style: italic;"></div>
  
 
   <br/><br/>
@@ -189,6 +192,30 @@
     }
 
   </script>
+<script>
+  const erklaerungMapping = {
+    "Riester TÜV": "Diese Selektion zeigt dir alle Riester-Verträge mit TÜV-Kennzeichnung.",
+    "Riester ohne Dauerzulagenantrag": "Diese Selektion zeigt Riester-Verträge ohne Dauerzulagenantrag.",
+    "BU-TÜV": "Diese Selektion zeigt dir alle deine BU-Renten im Bestand.",
+    "BU-Anpassung alle 5 Jahre": "Zeigt alle BU-Verträge mit 5-jähriger Anpassung.",
+    "BU-Anpassung alle 10 Jahre": "Zeigt alle BU-Verträge mit 10-jähriger Anpassung.",
+    "BU-Anpassung alle 15 Jahre": "Zeigt alle BU-Verträge mit 15-jähriger Anpassung.",
+    "BU-Anpassung alle 20 Jahre": "Zeigt alle BU-Verträge mit 20-jähriger Anpassung.",
+    "VEP und ADP": "Zeigt Verträge mit vermögenswirksamen Leistungen oder ADP.",
+    "Verfügbare TZ steuerfreie Verträge": "Alle steuerfreien Tarifzone-Verträge im Bestand.",
+    "Alle Kinder zwischen 0 und 18": "Zeigt Verträge für Kinder im Alter von 0–18 Jahren.",
+    "Alle KIZ Verträge": "Zeigt alle KIZ-Verträge.",
+    "Verträge mit alter BU-Option": "Zeigt Verträge mit alter Berufsunfähigkeits-Option.",
+    "bAV Bestand": "Zeigt alle betrieblichen Altersvorsorgeverträge im Bestand."
+  };
+
+  document.getElementById("selektion").addEventListener("change", function () {
+    const selectedText = this.options[this.selectedIndex].text;
+    const erklaerung = erklaerungMapping[selectedText] || "";
+    document.getElementById("erklaerungstext").textContent = erklaerung;
+  });
+</script>
+ 
 
 </body>
 
