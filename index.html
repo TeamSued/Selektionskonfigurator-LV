@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+ 
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>Selektionskonfigurator</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+ 
+
+<body>
+
+  <h1 class="ueberschrift">Hallo zusammen! Das ist euer persönlicher Selektionskonfigurator!</h1>
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+
+ 
+
+</html><!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Bestandsselektion</title>
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      padding: 20px;
+
+    }
+
+    .warning {
+
+      background-color: darkred;
+
+      padding: 20px;
+
+      font-weight: bold;
+
+      margin-bottom: 30px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="warning">Bitte OKI geöffnet haben.</div>
+
+ 
+
+  <label for="selektion">Wähle eine Selektion:</label>
+
+  <select id="selektion">
+
+    <option value="">-- Bitte auswählen --</option>
+
+ 
+
+     <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMxNyZzaWc9bWFjMjYyM0I4NjA2OTBDNDQ0MUNEQzBENjY5QzJGRUE5MzY1RDY1">Riester TÜV</option>
+
+ 
+
+     <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMwOSZzaWc9bWFjMjYyMzZCRTNFQTU2NDQwMEREQzk3RTE2MDY0RkY2NTgzMERB1">Riester ohne Dauerzulagenantrag</option>
+
+   
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjI5MyZzaWc9bWFjMjYyM0QxNUU1RUZEMTBERjY5MkVCNEM0ODkzQUZERTYyRDY5">BU-TÜV</option>
+
+   
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjI3OSZzaWc9bWFjMjYyMzUxRTJDNEU4OTUzMjNFMzREN0ExNEUxRjAzNTQ0MEMz">BU-Anpassung alle 5 Jahre</option>
+
+ 
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjM0MSZzaWc9bWFjMjYyMzA4QjQxQTUwNDIyQzQ3RTIzRDMxMjMwRTlGMEU4NEYz">BU-Anpassung alle 10 Jahre</option>
+
+   
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjI4MyZzaWc9bWFjMjYyM0VBRjREQ0VFMzI2NDcyNUZFNEY0QjY4NkVDRjE4OEZC">BU-Anpassung alle 15 Jahre</option>
+
+   
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjI4OSZzaWc9bWFjMjYyMzAyMjNGODMwRDFBMDMyMDEwQzU3MTdDNTI4MkI3ODM4">BU-Anpassung alle 20 Jahre</option>
+
+ 
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMyMSZzaWc9bWFjMjYyM0VFMDg3QzdEQjk3MENBMkExQjE2MzMzNEU5Q0IwOEMw">VEP und ADP</option>
+
+   
+
+    
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMwMyZzaWc9bWFjMjYyM0I2OTFBNzU3ODU5NUYwMTk1MTBEMDNDM0VGQkFCQzc1">Verfügbare TZ steuerfreie Verträge</option>
+
+ 
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMzMSZzaWc9bWFjMjYyMzYxRkRBNzRDRDc0NTdGNTBENzdBRjM1ODJDM0Y1QUJC">Alle Kinder zwischen 0 und 18</option>
+
+ 
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjI5NyZzaWc9bWFjMjYyMzQyOEJENUFBOEZEQTYwODEyNjhFRjQ0OEVERjNCODIx">Alle KIZ Verträge</option>
+
+ 
+
+     <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMyNyZzaWc9bWFjMjYyM0E2NEZGMjZERUI1RDVCNjhCQ0JDRUQ5MTQxMzM3Nzcx">Verträge mit alter BU-Option</option>
+
+ 
+
+    <option value="dvagsc://linkparams/?cu=1105830&ja=KI&j=Basis.Jumper.jumpinfo&jumpinfo=T0tJOi8vc2VsZWt0aW9uZW4vc2VsZWt0aW9uP3NlbGVrdGlvbmF1ZnRyYWdpZD0xNTM3MjMzNyZzaWc9bWFjMjYyMzUzN0QxRkFFQjc2MTVBRDAzOUIzMzIyRUFDQTkzQjM4x">bAV Bestand</option>
+
+  </select>
+
+ 
+
+  <br/><br/>
+
+ 
+
+  <label for="personalnummer">VB Nummer eingeben:</label>
+
+  <input type="text" id="personalnummer" placeholder="z. B. 1234567" />
+
+ 
+
+  <br/><br/>
+
+ 
+
+  <button onclick="ausfuehren()">Selektion ausführen</button>
+
+ 
+
+  <script>
+
+    function ausfuehren() {
+
+      const link = document.getElementById('selektion').value;
+
+      const personalnummer = document.getElementById('personalnummer').value.trim();
+
+ 
+
+      if (!link || !personalnummer) {
+
+        alert('Bitte Selektion und Personalnummer angeben.');
+
+        return;
+
+      }
+
+ 
+
+      // Ersetze "PERSONALNUMMER" im Link durch die tatsächliche Eingabe
+
+      const finalLink = link.replace('1105830', encodeURIComponent(personalnummer));
+
+ 
+
+      // Öffne den Link in einem neuen Tab
+
+      window.open(finalLink, '_blank');
+
+    }
+
+  </script>
+
+</body>
+
+</html>
